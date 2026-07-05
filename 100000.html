@@ -3,7 +3,7 @@
 <head>
     <title>Gana Datha Swamy Chits</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
 
@@ -76,6 +76,38 @@
         .btn:hover{
             background: navy;
         }
+        .table-container{
+            overflow-x:auto;
+            width:100%;
+        }
+        table{
+            width:100%;
+            min-width:700px;
+        }
+        @media (max-width:768px){
+            .container{
+                width:95%;
+                padding:15px;
+            }
+            h1{
+                font-size:30px;
+            }
+            .details{
+                font-size:18px;
+            }
+            .note{
+                font-size:16px;
+            }
+            th,td{
+                padding:8px;
+                font-size:14px;
+            }
+            .btn{
+                width:100%;
+            }
+        }
+
+    
 
     </style>
 </head>
@@ -94,6 +126,8 @@
 <p class="note">
     Payment should be paid before 10th of every month
 </p>
+
+<div class=""table-container">
 <table>
 <tr>
     <th>S.No</th>
@@ -130,6 +164,7 @@
 <tr><td>25</td><td>August 2028</td><td>4000</td><td>4000</td><td>125000</td></tr>
 
 </table>
+</div>
 
 <a href="chitti.html">
     <button class="btn">⬅ Back</button>
