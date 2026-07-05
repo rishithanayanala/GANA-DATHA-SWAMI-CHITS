@@ -1,82 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Chitti Plans</title>
 
-    <style>
-        body{
-            background:#fff0f5;
-            font-family:Arial;
-            text-align:center;
-            padding:20px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        h1{
-            color:darkred;
-        }
+<title>Chitti Plans</title>
 
-        .card{
-            background:white;
-            width:300px;
-            margin:20px auto;
-            padding:25px;
-            border-radius:20px;
-            box-shadow:0px 4px 10px gray;
-        }
+<style>
 
-        .active{
-            color:green;
-            font-weight:bold;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        a{
-            text-decoration:none;
-            color:black;
-        }
+body{
+    background:#fff0f5;
+    font-family:Arial,sans-serif;
+}
 
-        button{
-            background:darkred;
-            color:white;
-            border:none;
-            padding:10px 20px;
-            border-radius:10px;
-        }
-    </style>
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    text-align:center;
+}
+
+h1{
+    color:darkred;
+    margin-bottom:25px;
+    font-size:38px;
+}
+
+.card{
+    background:white;
+    width:100%;
+    max-width:500px;
+    margin:20px auto;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#222;
+}
+
+.active{
+    color:green;
+    font-weight:bold;
+}
+
+.inactive{
+    color:#666;
+}
+
+a{
+    text-decoration:none;
+}
+
+.btn{
+    margin-top:25px;
+    background:darkred;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn:hover{
+    background:#990000;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.container{
+    padding:15px;
+}
+
+h1{
+    font-size:30px;
+}
+
+.card{
+    width:100%;
+    padding:20px;
+}
+
+.card h2{
+    font-size:28px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
+
+<div class="container">
 
 <h1>💰 Chitti Plans</h1>
 
 <a href="inactive.html">
 <div class="card">
-    <h2>₹5,00,000</h2>
-    <p>Inactive</p>
+<h2>₹5,00,000</h2>
+<p class="inactive">Inactive</p>
 </div>
 </a>
 
 <a href="inactive.html">
 <div class="card">
-    <h2>₹2,00,000</h2>
-    <p>Inactive</p>
+<h2>₹2,00,000</h2>
+<p class="inactive">Inactive</p>
 </div>
 </a>
 
 <a href="100000.html">
 <div class="card">
-    <h2>₹1,00,000</h2>
-     <p class="active">✅ Present Active</p>
+<h2>₹1,00,000</h2>
+<p class="active">✅ Present Active</p>
 </div>
 </a>
 
 <a href="50000.html">
 <div class="card">
-    <h2>₹50,000</h2>
-    <p class="active">✅ Present Active</p>
+<h2>₹50,000</h2>
+<p class="active">✅ Present Active</p>
 </div>
 </a>
 
+<a href="index.html">
+<button class="btn">⬅ Back</button>
+</a>
 
- <a href="index.html">
-        <button class="btn">⬅ Back</button>
-    </a>
+</div>
+
+</body>
+</html>
